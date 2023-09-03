@@ -1,0 +1,66 @@
+main.inicio {
+  background: url(~src/assets/fondo-inicio.jpg) no-repeat center center fixed;
+  /* background: url(~src/assets/fondocarro.jpg) no-repeat center right fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* height: calc(100vh - 80px); */
+  height: 100vh;
+  margin: 0;
+}
+
+div.logo {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  width: 70px;
+  height: 125px;
+& img{
+  width: 122px;
+  height: auto;
+}
+}
+
+div.menu{
+  /* background: rgba(255, 255, 255, 0.2); */
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  top: 300px;
+  left: 3em;
+  & img{
+    margin-bottom: 2em;
+    max-width: 100%;
+    height: auto; 
+    padding: 0.33em;
+  }
+
+  p.boton-accede{
+
+    text-align: center;
+    display: block;
+    padding: 1em;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+ div.menu{
+   top: 150px;
+   left: 0;
+   padding: 0.8em;
+   max-width: 100%;
+ }
+}
+
+
+p.contenido-home{
+  color: white;
+  font-size: 1.2em;
+}
+

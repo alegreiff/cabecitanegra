@@ -1,0 +1,23 @@
+.footerretina{
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: white !important;
+}
+div.enlaces{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  gap: 20px;
+  padding: 0.6em;
+  & span{
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.enlaces{
+    background: crimson ;
+
+    grid-template-columns: 1fr 1fr !important;
+
+  }
+ }

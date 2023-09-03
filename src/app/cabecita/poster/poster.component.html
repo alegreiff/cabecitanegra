@@ -1,0 +1,19 @@
+<!-- <div class="poster">
+  {{ dato[lang].nombre }}
+<img [src]="'assets/posteres/'+ dato.id + '.jpg'" alt="">
+</div>
+ -->
+ <div class="container">
+  <div class="content">
+    <a [routerLink]="'/pelicula/'+ dato.slug" target="_self">
+      <div class="content-overlay"></div>
+      <img class="content-image" [src]="'assets/posteres/'+ dato.id + '.jpg'" alt="">
+      <div class="content-details fadeIn-top">
+        <h3> {{ dato[lang].nombre }} </h3>
+        <p> {{ dato[lang].tipo }} </p>
+        <p> {{ dato[lang].temas }} </p>
+        <span> {{ dato.year }} </span>
+      </div>
+    </a>
+  </div>
+</div>

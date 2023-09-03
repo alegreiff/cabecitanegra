@@ -1,0 +1,92 @@
+<main class="proyectos">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">{{ lang === "es" ? "Inicio" : "Home" }} </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a routerLink="/proyectos">
+          {{ lang === "es" ? "Proyectos" : "Projects" }}
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        {{ pelicula[lang].nombre }}
+      </li>
+    </ol>
+  </nav>
+
+  <div class="contenido">
+    <div class="info">
+      <h3> {{ pelicula[lang].nombre }} </h3>
+      <span *ngIf="pelicula.year"> {{ pelicula.year }} / </span> <span> {{ pelicula[lang].tipo }} </span>
+    </div>
+    <div class="poster">
+      <ng-container>
+        <img *ngIf="pelicula.poster" class="content-image" [src]="'assets/posteres/'+ pelicula.id + 'po.jpg'" alt="">
+        <img *ngIf="!pelicula.poster" class="content-image" [src]="'assets/posteres/'+ pelicula.id + '.jpg'" alt="">
+
+      </ng-container>
+      <div class="peliculainfo">
+        <p *ngIf="pelicula.year"> {{ pelicula.year }} </p>
+        <p> {{ pelicula[lang].temas }} </p>
+        <p *ngIf="pelicula[lang].duracion"> {{ pelicula[lang].duracion }} </p>
+        <ng-container *ngIf="pelicula.cast">
+          <p><span class="altas">{{ lang === "es" ? "Reparto" : "Cast" }}</span></p>
+          <p> {{ pelicula.cast }} </p>
+        </ng-container>
+        <p *ngIf="pelicula.director"> <span class="altas">Director</span> {{ pelicula.director }} </p>
+        <p *ngIf="pelicula.productor"> <span class="altas"> {{ pelicula[lang].lblProductor }} </span> {{
+          pelicula.productor }} </p>
+        <p *ngIf="pelicula.coproductor"> <span class="altas"> {{ pelicula[lang].lblCoproductor }} </span> {{
+          pelicula.coproductor }} </p>
+        <p *ngIf="pelicula.guion"> <span class="altas">Guion</span> {{
+          pelicula.guion }} </p>
+        <p *ngIf="pelicula.ideaoriginal"> <span class="altas">Idea original</span> {{
+          pelicula.ideaoriginal }} </p>
+
+
+        <ng-container *ngIf="pelicula.agenteventas">
+          <p><span class="altas">{{ lang === "es" ? "Agente de ventas" : "Sales agent" }}</span></p>
+          <p> {{ pelicula.agenteventas }} </p>
+        </ng-container>
+        <p *ngIf="pelicula[lang].basadaen" [innerHTML]="pelicula[lang].basadaen"></p>
+
+      </div>
+
+      <p class="lospremios" *ngIf="pelicula[lang].premios" [innerHTML]="pelicula[lang].premios"></p>
+      <a *ngIf="pelicula.dossier" type="button" class="btn btn-secondary btn-sm buttondossier"
+        [href]="'assets/dossier/' + pelicula.dossier" target="_blank">
+        Dossier {{ pelicula[lang].nombre }}
+      </a>
+      <div *ngIf="pelicula.trailer" class="trailer">
+
+        <div style="padding:41.89% 0 0 0;position:relative;">
+          <iframe [src]="'https://player.vimeo.com/video/'+ pelicula.trailer | safeurl"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- <div class="embed-youtube">
+          <iframe [src]="'//www.youtube.com/embed/' + pelicula.trailer | safeurl" width="750" height="563"></iframe>
+        </div> -->
+      </div>
+    </div>
+    <div class="sinopsis" [innerHTML]="pelicula[lang].sinopsis">
+
+    </div>
+  </div>
+
+
+  <div class="row galeria">
+
+    <ngx-gallery *ngIf="pelicula.galeria" [options]="galleryOptions" [images]="galleryImages"
+      class="ngx-gallery"></ngx-gallery>
+
+  </div>
+  <!-- <div *ngIf="pelicula.galeria" class="galeria">
+    <p *ngFor="let gal of pelicula.galeria"> {{ gal }} </p>
+
+  </div> -->
+</main>
+<app-footer></app-footer>

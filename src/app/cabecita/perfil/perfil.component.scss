@@ -1,0 +1,36 @@
+main.personas {
+  border: 1px grey solid;
+
+  margin: 1em;
+
+  & nav {
+    margin-top: 0em;
+  }
+
+  & ol.breadcrumb{
+    background-color: white !important;
+  }
+}
+
+.contenido{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1em;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+& h3{
+  font-weight: 100;
+}
+
+& img {
+  padding: 2em 1em;
+max-width: 100%;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .contenido{
+    display: block !important;
+  }
+}

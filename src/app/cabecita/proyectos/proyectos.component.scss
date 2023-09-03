@@ -1,0 +1,78 @@
+div.proyectos {
+  border: 1px grey solid;
+  width: 92%;
+  max-width: 1400px;
+  margin: 1em auto 6em auto;
+
+
+
+
+
+
+}
+.cabecita {
+  margin: 0 auto;
+
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+  & img.letras{
+    margin: 3em auto 1em;
+    max-width: 100%;
+    padding: 0.33em;
+  }
+  & img.logo{
+    max-width: 122px;
+  }
+}
+
+.tabset{
+
+  max-width: 800px;
+  padding: 2em;
+  margin: 0 auto;
+
+  & h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: #aaa3a3;
+    font-weight: 400;
+  }
+
+}
+.contenidos{
+  max-width: 800px;
+  padding: 2em;
+  margin: 0 auto;
+
+  & h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: #aaa3a3;
+    font-weight: 400;
+  }
+}
+.posteres{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .posteres{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.altas{
+  text-transform: uppercase !important;
+}
+
+ul li {
+  font-weight: 700;
+}

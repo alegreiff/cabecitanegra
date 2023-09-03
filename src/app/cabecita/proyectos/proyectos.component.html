@@ -1,0 +1,72 @@
+<div class="proyectos">
+  <div class="cabecita">
+    <img src="assets/letrasnegro.png" alt="" class="letras animate__fadeInLeftBig" />
+    <a routerLink="/"><img src="assets/logoblanco.png" alt="LOGO" class="logo" /></a>
+  </div>
+
+  <div class="tabset">
+    <tabset>
+      <tab [heading]="lang === 'es' ? 'OBRAS' : 'WORK'" id="tab1">
+        <div class="contenidos">
+
+
+          <!-- <h3>{{ lang === "es" ? "Finalizadas" : "Completed" }}</h3> -->
+          <h3>{{ lang === "es" ? "" : "" }}</h3>
+          <div class="posteres">
+            <div *ngFor="let peli of peliculasTerminadas">
+              <app-poster [dato]="peli"></app-poster>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3>{{ lang === "es" ? "En desarrollo" : "In development" }}</h3>
+          <div class="posteres">
+            <div *ngFor="let peli of peliculasDesarrollo">
+              <app-poster [dato]="peli"></app-poster>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3>{{ lang === "es" ? "En preproducción" : "Pre - production" }}</h3>
+          <div class="posteres">
+            <div *ngFor="let peli of peliculasPre">
+              <app-poster [dato]="peli"></app-poster>
+            </div>
+          </div>
+
+
+        </div>
+      </tab>
+
+      <tab [heading]="lang === 'es' ? 'NOSOTROS' : 'US'">
+        <app-perfil></app-perfil>
+      </tab>
+
+      <tab [heading]="lang === 'es' ? 'REEL' : 'REEL'">
+        <div style="padding:41.89% 0 0 0;position:relative; margin-top: 3rem">
+          <iframe [src]="'https://player.vimeo.com/video/428813760' | safeurl"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </tab>
+      <tab [heading]="lang === 'es' ? 'PUEDES' : 'PUEDES'">
+        <div style="padding-top: 3rem">
+          <h4>Con Cabecitanegra también puedes:</h4>
+          <ul>
+            <li>Coproducir documentales, series y ficciones</li>
+            <li>Hacer tus pasantías y prácticas académicas</li>
+            <li>Recibir asesoría para tus proyectos</li>
+            <li>Implementar sistemas de producción colaborativos</li>
+
+          </ul>
+        </div>
+      </tab>
+
+    </tabset>
+  </div>
+</div>
+
+<app-footer></app-footer>

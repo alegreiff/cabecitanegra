@@ -1,0 +1,14 @@
+<main class="inicio">
+  <div class="logo">
+    <img src="assets/logoinv.png" alt="LOGO">
+  </div>
+  <div class="menu">
+    <img src="assets/letrasblanco.png" alt="">
+    <p class="contenido-home" [innerHTML]="lang==='es'? contenidoES : contenidoEN"></p>
+    <p routerLink="/proyectos" class="boton-accede"> {{ lang==='es'? 'Entrar' : 'Enter' }} </p>
+  </div>
+<!-- <button (click)="idiomaCont('es')">ES</button>
+<button (click)="idiomaCont('en')">EN</button> -->
+
+<h5>Alfonso Acosta - Carolina Mosquera</h5>
+</main>
