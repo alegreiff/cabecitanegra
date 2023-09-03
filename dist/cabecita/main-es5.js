@@ -1479,8 +1479,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, InicioComponent);
 
         this.ds = ds;
-        this.title = 'cabecita';
-        this.contenidoES = "Somos una empresa colombiana de <strong>creaci\xF3n</strong> y <strong>producci\xF3n</strong> de contenidos para cine y televisi\xF3n fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisi\xF3n y docentes. Nos interesa desarrollar y producir proyectos de alto valor art\xEDstico en los que se asuman riesgos narrativos y est\xE9ticos, historias con visiones fuertes, personales y originales. \n   \n  <br><br>\n  En Cabecitanegra encontrar\xE1n un espacio \xEDntimo de creaci\xF3n, de aprendizaje, y de trabajo colaborativo.";
+        this.title = "cabecita";
+        this.contenidoES = "Si Somos una empresa colombiana de <strong>creaci\xF3n</strong> y <strong>producci\xF3n</strong> de contenidos para cine y televisi\xF3n fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisi\xF3n y docentes. Nos interesa desarrollar y producir proyectos de alto valor art\xEDstico en los que se asuman riesgos narrativos y est\xE9ticos, historias con visiones fuertes, personales y originales. \n   \n  <br><br>\n  En Cabecitanegra encontrar\xE1n un espacio \xEDntimo de creaci\xF3n, de aprendizaje, y de trabajo colaborativo.";
         this.contenidoEN = "Independent film production company based in Bogot\xE1, Colombia interested in producing art-house content. Its films and TV series are caracterized by its multiple reading layers with a strong, fresh and original vision.\n  <br><br>\n  A creative look on production processes, the strength of good ideas, the passion and a strong authorial character, guide the production of our projects.";
       } //contenido: string;
 
@@ -1562,9 +1562,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InicioComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-          selector: 'app-inicio',
-          templateUrl: './inicio.component.html',
-          styleUrls: ['./inicio.component.scss']
+          selector: "app-inicio",
+          templateUrl: "./inicio.component.html",
+          styleUrls: ["./inicio.component.scss"]
         }]
       }], function () {
         return [{

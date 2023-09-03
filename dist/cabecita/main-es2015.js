@@ -747,8 +747,8 @@ __webpack_require__.r(__webpack_exports__);
 class InicioComponent {
     constructor(ds) {
         this.ds = ds;
-        this.title = 'cabecita';
-        this.contenidoES = `Somos una empresa colombiana de <strong>creación</strong> y <strong>producción</strong> de contenidos para cine y televisión fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisión y docentes. Nos interesa desarrollar y producir proyectos de alto valor artístico en los que se asuman riesgos narrativos y estéticos, historias con visiones fuertes, personales y originales. 
+        this.title = "cabecita";
+        this.contenidoES = `Si Somos una empresa colombiana de <strong>creación</strong> y <strong>producción</strong> de contenidos para cine y televisión fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisión y docentes. Nos interesa desarrollar y producir proyectos de alto valor artístico en los que se asuman riesgos narrativos y estéticos, historias con visiones fuertes, personales y originales. 
    
   <br><br>
   En Cabecitanegra encontrarán un espacio íntimo de creación, de aprendizaje, y de trabajo colaborativo.`;
@@ -759,7 +759,7 @@ class InicioComponent {
     //contenido: string;
     ngOnInit() {
         //this.contenido = this.contenidoES;
-        this.ds.lang.subscribe((val) => this.lang = val);
+        this.ds.lang.subscribe((val) => (this.lang = val));
     }
 }
 InicioComponent.ɵfac = function InicioComponent_Factory(t) { return new (t || InicioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_datos_service__WEBPACK_IMPORTED_MODULE_1__["DatosService"])); };
@@ -788,9 +788,9 @@ InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InicioComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'app-inicio',
-                templateUrl: './inicio.component.html',
-                styleUrls: ['./inicio.component.scss']
+                selector: "app-inicio",
+                templateUrl: "./inicio.component.html",
+                styleUrls: ["./inicio.component.scss"],
             }]
     }], function () { return [{ type: _datos_service__WEBPACK_IMPORTED_MODULE_1__["DatosService"] }]; }, null); })();
 
