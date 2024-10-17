@@ -10,7 +10,7 @@ export class InicioComponent implements OnInit {
   constructor(private ds: DatosService) {}
   lang: string;
   title = "cabecita";
-  contenidoES: string = `Somos una empresa colombiana de <strong>creación</strong> y <strong>producción</strong> de contenidos para cine y televisión fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisión y docentes. Nos interesa desarrollar y producir proyectos de alto valor artístico en los que se asuman riesgos narrativos y estéticos, historias con visiones fuertes, personales y originales. 
+  contenidoES: string = `Somos es una empresa colombiana de <strong>creación</strong> y <strong>producción</strong> de contenidos para cine y televisión fundada en 2009 por Carolina Mosquera y Alfonso Acosta, realizadores de cine y televisión y docentes. Nos interesa desarrollar y producir proyectos de alto valor artístico en los que se asuman riesgos narrativos y estéticos, historias con visiones fuertes, personales y originales. 
    
   <br>:<br>
   En Cabecitanegra encontrarán un espacio íntimo de creación, de aprendizaje, y de trabajo colaborativo.`;
